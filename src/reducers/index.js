@@ -130,14 +130,14 @@ export default (state = [], action) =>
     console.log('what the fuck am i doing?');
       break;
     case 'GenerateState':
-      return { 
-        Attempts: 0, 
-        CardSource: GetState()
-      }
+      return GetState(); //{ 
+        //Attempts: 0, 
+        /*CardSource:*/ 
+      //}
     default:
-      return { 
-        Attempts: 0, 
-        CardSource: GetState()
-      };
+      return GetState();//{ 
+  //      Attempts: 0, 
+    //    CardSource: GetState()
+      //};
   }
 }

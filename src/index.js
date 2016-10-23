@@ -9,7 +9,7 @@ const store = createStore(CardState)
 
 const render = () => ReactDOM.render(
   <div><h1>Pexeso</h1><div>
-     {store.getState().CardSource.map(card =>
+     {store.getState().map(card =>
        <Card key={card.Id} Id={card.Id} TurnCard={() => 
          store.dispatch({
            type: 'TurnCard',
